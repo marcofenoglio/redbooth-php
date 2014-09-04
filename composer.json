@@ -1,0 +1,22 @@
+{
+    "name": "redbooth/redbooth",
+    "type": "library",
+    "description": "Official Redbooth PHP client",
+    "keywords": ["redbooth", "api", "tasks", "conversations"],
+    "license": "MIT",
+    "version": "0.0.1",
+    "require": {
+        "nategood/httpful": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Redbooth": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "squizlabs/php_codesniffer": "~1.5",
+    	"phpunit/phpunit-skeleton-generator": "*",
+    	"fzaninotto/faker": "*"
+    }
+}

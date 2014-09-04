@@ -1,0 +1,17 @@
+<phpunit bootstrap="./src/autoload.php">
+
+   <php>
+      <env name="oauthClientId" value="" />
+      <env name="oauthClientSecret" value="" />
+      <env name="oauthAccessToken" value="" />
+      <env name="oauthRefreshToken" value="" />
+      <env name="projectId" value="" />
+      <env name="tasklistId" value="" />
+   </php>
+
+   <testsuites>
+      <testsuite name="Redbooth">
+         <directory>./test/</directory>
+      </testsuite>
+   </testsuites>
+</phpunit>
