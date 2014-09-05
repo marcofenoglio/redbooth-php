@@ -47,7 +47,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
      */
     protected function setUp()
     {
-        if ($_ENV['integrationTests']) {
+        if (!empty($_ENV['integrationTests'])) {
             $this->object = new \Redbooth\Service($_ENV['oauthClientId'],
                                                 $_ENV['oauthClientSecret'],
                                                 $_ENV['oauthAccessToken'],
