@@ -1,0 +1,32 @@
+[
+   {
+      "watch_new_conversation" : false,
+      "watch_new_task" : false,
+      "created_at" : 1409859160,
+      "updated_at" : 1409859160,
+      "watch_new_page" : false,
+      "source_user_id" : 1,
+      "digest" : 4,
+      "instant_notifications" : true,
+      "type" : "Person",
+      "id" : 1,
+      "user_id" : 1,
+      "role" : "participant",
+      "project_id" : 1
+   },
+   {
+      "watch_new_conversation" : false,
+      "watch_new_task" : false,
+      "created_at" : 1409844558,
+      "updated_at" : 1409844558,
+      "watch_new_page" : false,
+      "source_user_id" : 1,
+      "digest" : 4,
+      "instant_notifications" : true,
+      "type" : "Person",
+      "id" : 1,
+      "user_id" : 1,
+      "role" : "participant",
+      "project_id" : 1
+   }
+]

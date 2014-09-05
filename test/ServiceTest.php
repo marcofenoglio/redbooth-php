@@ -8,17 +8,54 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
      */
     protected $object;
 
+    public function setUpMocking()
+    {
+        $this->object = $this->getMockBuilder('\Redbooth\Service')
+                              ->disableOriginalConstructor()
+                              ->getMock();
+        $methods = array(
+            'getActivities',
+//          'getComments',
+            'getConversations',
+            'getMemberships',
+            'getNotes',
+            'getNotifications',
+            'getOrganizations',
+            'getPeople',
+            'getProjects',
+            'getSubtasks',
+            'getTaskLists',
+            'getTasks',
+            'getUsers',
+            'getMe',
+        );
+        $map = array();
+        foreach ($methods as $method) {
+            $map[] = array($method, array(), json_decode(file_get_contents('test/mocks/' . $method . '.mock')));
+        }
+        $this->object->expects($this->any())
+                      ->method('__call')
+                      ->will($this->returnValueMap($map));
+        $this->object->expects($this->any())
+                      ->method('getMe')
+                      ->will($this->returnValue(json_decode(file_get_contents('test/mocks/getMe.mock'))));
+
+    }
     /**
      * Sets up the fixture, for example, opens a network connection.
      * This method is called before a test is executed.
      */
     protected function setUp()
     {
-        $this->object = new \Redbooth\Service($_ENV['oauthClientId'],
-                                            $_ENV['oauthClientSecret'],
-                                            $_ENV['oauthAccessToken'],
-                                            $_ENV['oauthRefreshToken'],
-                                            $_ENV['oauthRedirectUrl']);
+        if ($_ENV['integrationTests']) {
+            $this->object = new \Redbooth\Service($_ENV['oauthClientId'],
+                                                $_ENV['oauthClientSecret'],
+                                                $_ENV['oauthAccessToken'],
+                                                $_ENV['oauthRefreshToken'],
+                                                $_ENV['oauthRedirectUrl']);
+        } else {
+            $this->setUpMocking();
+        }
     }
 
     /**
@@ -77,7 +114,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetActivities()
     {
-        return $this->object->getActivities();
+        $res = $this->object->getActivities();
         foreach ($res as $item) {
             $this->assertNotNull($item);
             $this->assertInternalType('object', $item);
@@ -91,7 +128,8 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetComments()
     {
-        return $this->object->getComments();
+        $this->markTestSkipped();
+        $res = $this->object->getComments();
         foreach ($res as $item) {
             $this->assertNotNull($item);
             $this->assertInternalType('object', $item);
@@ -105,7 +143,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetConversations()
     {
-        return $this->object->getConversations();
+        $res = $this->object->getConversations();
         foreach ($res as $item) {
             $this->assertNotNull($item);
             $this->assertInternalType('object', $item);
@@ -119,7 +157,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetMemberships()
     {
-        return $this->object->getMemberships();
+        $res = $this->object->getMemberships();
         foreach ($res as $item) {
             $this->assertNotNull($item);
             $this->assertInternalType('object', $item);
@@ -133,7 +171,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetNotes()
     {
-        return $this->object->getNotes();
+        $res = $this->object->getNotes();
         foreach ($res as $item) {
             $this->assertNotNull($item);
             $this->assertInternalType('object', $item);
@@ -147,7 +185,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetNotifications()
     {
-        return $this->object->getNotifications();
+        $res = $this->object->getNotifications();
         foreach ($res as $item) {
             $this->assertNotNull($item);
             $this->assertInternalType('object', $item);
@@ -161,7 +199,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetOrganizations()
     {
-        return $this->object->getOrganizations();
+        $res = $this->object->getOrganizations();
         foreach ($res as $item) {
             $this->assertNotNull($item);
             $this->assertInternalType('object', $item);
@@ -175,7 +213,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetPeople()
     {
-        return $this->object->getPeople();
+        $res = $this->object->getPeople();
         foreach ($res as $item) {
             $this->assertNotNull($item);
             $this->assertInternalType('object', $item);
@@ -189,7 +227,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetProjects()
     {
-        return $this->object->getProjects();
+        $res = $this->object->getProjects();
         foreach ($res as $item) {
             $this->assertNotNull($item);
             $this->assertInternalType('object', $item);
@@ -203,7 +241,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetSubtasks()
     {
-        return $this->object->getTasks();
+        $res = $this->object->getTasks();
         foreach ($res as $item) {
             $this->assertNotNull($item);
             $this->assertInternalType('object', $item);
@@ -217,7 +255,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetTaskLists()
     {
-        return $this->object->getTaskLists();
+        $res = $this->object->getTaskLists();
         foreach ($res as $item) {
             $this->assertNotNull($item);
             $this->assertInternalType('object', $item);

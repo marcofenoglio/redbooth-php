@@ -1,0 +1,46 @@
+[
+   {
+      "archived_tasks_count" : 1,
+      "position" : null,
+      "created_at" : 1408029085,
+      "metadata" : {
+         "personal" : true
+      },
+      "updated_by_id" : null,
+      "id" : 1,
+      "tasks_count" : 1,
+      "project_id" : 1,
+      "name" : "Lorem ipsum dolor sit amet",
+      "deleted" : false,
+      "archived" : false,
+      "finish_on" : null,
+      "last_comment_id" : null,
+      "updated_at" : 1408029085,
+      "start_on" : null,
+      "user_id" : 1,
+      "type" : "TaskList",
+      "completed_at" : null
+   },
+   {
+      "archived_tasks_count" : 0,
+      "position" : null,
+      "created_at" : 1408029085,
+      "metadata" : {
+         "personal" : true
+      },
+      "updated_by_id" : null,
+      "id" : 1,
+      "tasks_count" : 9,
+      "project_id" : 1,
+      "name" : "Lorem ipsum dolor sit amet",
+      "deleted" : false,
+      "archived" : false,
+      "finish_on" : null,
+      "last_comment_id" : null,
+      "updated_at" : 1408029085,
+      "start_on" : null,
+      "user_id" : 1,
+      "type" : "TaskList",
+      "completed_at" : null
+   }
+]
