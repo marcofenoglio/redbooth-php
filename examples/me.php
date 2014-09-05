@@ -5,7 +5,8 @@ $redbooth = new \Redbooth\Service(
     'CLIENT_ID',      // update with your client id
     'CLIENT_SECRET',  // update with your client secret
     'ACCESS_TOKEN',   // update with your user's access token
-    'REFRESH_TOKEN'   // update with your user's refresh token
+    'REFRESH_TOKEN',  // update with your user's refresh token
+    'REDIRECT_URL'    // update with your redirect URL
 );
 
 try {

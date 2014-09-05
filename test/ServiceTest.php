@@ -17,7 +17,8 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
         $this->object = new \Redbooth\Service($_ENV['oauthClientId'],
                                             $_ENV['oauthClientSecret'],
                                             $_ENV['oauthAccessToken'],
-                                            $_ENV['oauthRefreshToken']);
+                                            $_ENV['oauthRefreshToken'],
+                                            $_ENV['oauthRedirectUrl']);
     }
 
     /**
