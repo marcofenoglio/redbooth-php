@@ -1,0 +1,36 @@
+[
+   {
+      "bouncing_email" : false,
+      "avatar_url" : "https://example.com",
+      "deleted" : false,
+      "username" : "user",
+      "last_name" : "Lastname",
+      "email" : "user@example.com",
+      "needs_profile" : false,
+      "confirmed_user" : true,
+      "created_at" : 1408029022,
+      "updated_at" : 1409841763,
+      "micro_avatar_url" : "https://example.com",
+      "type" : "User",
+      "id" : 1,
+      "profile_avatar_url" : "https://example.com",
+      "first_name" : "Firstname"
+   },
+   {
+      "bouncing_email" : false,
+      "avatar_url" : "https://example.com",
+      "deleted" : false,
+      "username" : "user",
+      "last_name" : "Lastname",
+      "email" : "user@example.com",
+      "needs_profile" : false,
+      "confirmed_user" : true,
+      "created_at" : 1408029022,
+      "updated_at" : 1409841763,
+      "micro_avatar_url" : "https://example.com",
+      "type" : "User",
+      "id" : 1,
+      "profile_avatar_url" : "https://example.com",
+      "first_name" : "Firstname"
+   }
+]

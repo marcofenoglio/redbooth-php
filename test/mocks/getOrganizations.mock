@@ -1,0 +1,62 @@
+[
+   {
+      "used_users" : 3,
+      "remaining_users" : 2,
+      "shortcut_apps" : null,
+      "has_logo" : false,
+      "available_users" : 5,
+      "available_projects" : 5,
+      "remaining_projects" : 3,
+      "permalink" : "lorem-ipsum",
+      "feature_level" : "freeu",
+      "square_logo_url" : "/images/logos/square/missing.png",
+      "created_at" : 1370451110,
+      "domain" : null,
+      "top_logo_url" : "/images/logos/top/missing.png",
+      "metadata" : {},
+      "seats" : 5,
+      "subscription_id" : 1,
+      "omit_email_processing" : false,
+      "id" : 1,
+      "used_projects" : 2,
+      "name" : "test",
+      "settings" : {
+         "allow_comment_deletion" : true
+      },
+      "updated_at" : 1409479408,
+      "type" : "Organization",
+      "product" : "users-free",
+      "product_name" : "free"
+   },
+   {
+      "used_users" : 1,
+      "remaining_users" : 4,
+      "shortcut_apps" : null,
+      "has_logo" : false,
+      "available_users" : 5,
+      "available_projects" : 5,
+      "remaining_projects" : 0,
+      "permalink" : "personal_projects",
+      "feature_level" : "freeu",
+      "square_logo_url" : "/images/logos/square/missing.png",
+      "created_at" : 1369661905,
+      "domain" : null,
+      "top_logo_url" : "/images/logos/top/missing.png",
+      "metadata" : {
+         "personal" : true
+      },
+      "seats" : 5,
+      "subscription_id" : 1,
+      "omit_email_processing" : false,
+      "id" : 1,
+      "used_projects" : 999999,
+      "name" : "Personal project",
+      "settings" : {
+         "allow_comment_deletion" : true
+      },
+      "updated_at" : 1409479434,
+      "type" : "Organization",
+      "product" : "users-free",
+      "product_name" : "free"
+   }
+]

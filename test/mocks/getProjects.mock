@@ -1,0 +1,40 @@
+[
+   {
+      "permalink" : "lorem-ipsum",
+      "created_at" : 1408029084,
+      "public" : null,
+      "start_date" : null,
+      "id" : 1,
+      "organization_id" : 1,
+      "name" : "Lorem ipsum dolor sit amet",
+      "publish_pages" : false,
+      "deleted" : false,
+      "archived" : false,
+      "description" : null,
+      "settings" : {},
+      "updated_at" : 1408029084,
+      "end_date" : null,
+      "type" : "Project",
+      "tracks_time" : false
+   },
+   {
+      "permalink" : "lorem-ipsum",
+      "created_at" : 1405518233,
+      "public" : false,
+      "start_date" : null,
+      "id" : 1,
+      "organization_id" : 1,
+      "name" : "Lorem ipsum dolor sit amet",
+      "publish_pages" : false,
+      "deleted" : false,
+      "archived" : false,
+      "description" : null,
+      "settings" : {
+         "include_weekend_days" : false
+      },
+      "updated_at" : 1409830693,
+      "end_date" : null,
+      "type" : "Project",
+      "tracks_time" : false
+   }
+]
