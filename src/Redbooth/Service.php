@@ -8,69 +8,42 @@ require 'Base.php';
  */
 class Service extends Base
 {
-    public function getActivities()
-    {
-        return $this->get('activities');
-    }
+    private $listGetters = array(
+        'activities',
+        'comments',
+        'conversations',
+        'memberships',
+        'notes',
+        'notifications',
+        'organizations',
+        'people',
+        'projects',
+        'subtasks',
+        'task_lists',
+        'tasks',
+        'users'
+    );
 
-    public function getComments()
+    public function __call($name, $arguments)
     {
-        return $this->get('comments');
-    }
+        // text conversion
+        // from getExampleMethod to example_method
+        $name = strtolower(preg_replace('/([A-Z])/', '_$1', $name));
+        $name = preg_replace('/^get_/', '', $name);
 
-    public function getConversations()
-    {
-        return $this->get('conversations');
-    }
+        // check if the method can be called
+        if (in_array($name, $this->listGetters)) {
+            // if there are any arguments, build the HTTP query
+            if (!empty($arguments)) {
+                $query = '?' . http_build_query($arguments);
+            } else {
+                $query = '';
+            }
 
-    public function getMemberships()
-    {
-        return $this->get('memberships');
-    }
-
-    public function getNotes()
-    {
-        return $this->get('notes');
-    }
-
-    public function getNotifications()
-    {
-        return $this->get('notifications');
-    }
-
-    public function getOrganizations()
-    {
-        return $this->get('organizations');
-    }
-
-    public function getPeople()
-    {
-        return $this->get('people');
-    }
-
-    public function getProjects()
-    {
-        return $this->get('projects');
-    }
-
-    public function getSubtasks()
-    {
-        return $this->get('subtasks');
-    }
-
-    public function getTaskLists()
-    {
-        return $this->get('task_lists');
-    }
-
-    public function getTasks()
-    {
-        return $this->get('tasks');
-    }
-
-    public function getUsers()
-    {
-        return $this->get('users');
+            return $this->get($name . $query);
+        } else {
+            throw new Exception\MethodNotFoundException();
+        }
     }
 
     public function getMe()

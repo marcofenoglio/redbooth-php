@@ -5,6 +5,7 @@
       <env name="oauthClientSecret" value="" />
       <env name="oauthAccessToken" value="" />
       <env name="oauthRefreshToken" value="" />
+      <env name="oauthRedirectUrl" value="" />
       <env name="projectId" value="" />
       <env name="tasklistId" value="" />
    </php>
