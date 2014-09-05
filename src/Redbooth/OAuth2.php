@@ -13,13 +13,15 @@ class OAuth2
     private $clientSecret = null;
     private $accessToken = null;
     private $refreshToken = null;
+    private $redirectUrl = null;
 
-    public function __construct($clientId, $clientSecret, $accessToken, $refreshToken)
+    public function __construct($clientId, $clientSecret, $accessToken, $refreshToken, $redirectUrl)
     {
         $this->clientId = $clientId;
         $this->clientSecret = $clientSecret;
         $this->accessToken = $accessToken;
         $this->refreshToken = $refreshToken;
+        $this->redirectUrl = $redirectUrl;
     }
 
     protected function addAuthorizationHeader($headers = array())
@@ -53,7 +55,7 @@ class OAuth2
             'client_secret' => $this->clientSecret,
             'refresh_token' => $this->refreshToken,
             'grant_type' => 'refresh_token',
-            'redirect_uri' => urlencode('https://www.getpostman.com/oauth2/callback')
+            'redirect_uri' => urlencode($this->redirectUrl)
         );
         $res = \Httpful\Request::post('https://redbooth.com/oauth2/token')
             ->body($data)
