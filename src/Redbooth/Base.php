@@ -40,13 +40,16 @@ class Base extends OAuth2
 
     public function postFile($method, $data, $filePath, $fileName = 'asset')
     {
+        $finfo = finfo_open(FILEINFO_MIME_TYPE);
+        $mimeType = finfo_file($finfo, $filePath);
+        $data[$fileName] = '@' . $filePath . ';type=' . $mimeType;
         $res = \Httpful\Request::post($this->buildEndpointUrl($method))
             ->body($data)
             ->addHeaders($this->addAuthorizationHeader())
             ->expectsJson()
             ->sendTypes(\Httpful\Mime::FORM)
             ->addHeader('Accept', 'application/json')
-            ->attach(array($fileName => $filePath))
+            ->sendsType(\Httpful\Mime::UPLOAD)
             ->send();
         $this->throwIfTokenInvalid($res);
         return $res->body;
