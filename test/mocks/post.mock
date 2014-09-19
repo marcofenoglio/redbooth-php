@@ -1,0 +1,31 @@
+{
+   "is_private" : false,
+   "description_html" : "",
+   "status" : "new",
+   "description_updated_by_user_id" : null,
+   "position" : 5,
+   "assigned_id" : null,
+   "task_list_id" : 1,
+   "due_on" : null,
+   "record_conversion_id" : null,
+   "record_conversion_type" : null,
+   "created_at" : 1411143038,
+   "updated_by_id" : null,
+   "metadata" : {},
+   "id" : 1,
+   "subtasks_count" : 0,
+   "resolved_subtasks_count" : 0,
+   "project_id" : 1,
+   "comments_count" : 0,
+   "watcher_ids" : [
+     1 
+   ],
+   "name" : "Quidem sit inventore aut eos veritatis.",
+   "last_activity_id" : null,
+   "deleted" : false,
+   "urgent" : false,
+   "description" : null,
+   "updated_at" : 1411143038,
+   "type" : "Task",
+   "user_id" : 1
+}
