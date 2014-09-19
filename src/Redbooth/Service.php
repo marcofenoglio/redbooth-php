@@ -50,4 +50,14 @@ class Service extends Base
     {
         return $this->get('me');
     }
+
+    public function createConversation($projectId, $name, $body = '', $isPrivate = false)
+    {
+        $data = array('project_id' => $projectId,
+                      'name' => $name,
+                      'body' => $body,
+                      'is_private' => $isPrivate);
+        $res = $this->post('conversations', $data);
+        return $res;
+    }
 }

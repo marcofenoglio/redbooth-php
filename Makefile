@@ -7,4 +7,4 @@ sniff: vendor/autoload.php
 
 .PHONY: test
 test: vendor/autoload.php
-	vendor/bin/phpunit --group listGetters,getters
+	vendor/bin/phpunit
