@@ -20,7 +20,7 @@ Example `composer.json`:
 
 After the package is properly installed you can connect to Redbooth API through the `\Redbooth\Service` class.
 
-Here's an example code that reads information about your user (also available on `examples/me.php`:
+Here's an example code that reads information about your user (also available on `examples/me.php`):
 
 ```php
 <?php

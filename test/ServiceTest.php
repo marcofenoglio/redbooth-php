@@ -39,7 +39,15 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
         $this->object->expects($this->any())
                       ->method('getMe')
                       ->will($this->returnValue(json_decode(file_get_contents('test/mocks/getMe.mock'))));
-
+        $this->object->expects($this->any())
+                      ->method('post')
+                      ->will($this->returnValue(json_decode(file_get_contents('test/mocks/post.mock'))));
+        $this->object->expects($this->any())
+                      ->method('postFile')
+                      ->will($this->returnValue(json_decode(file_get_contents('test/mocks/postFile.mock'))));
+        $this->object->expects($this->any())
+                      ->method('createConversation')
+                      ->will($this->returnValue(json_decode(file_get_contents('test/mocks/createConversation.mock'))));
     }
     /**
      * Sets up the fixture, for example, opens a network connection.
@@ -105,7 +113,6 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
         $this->assertInternalType('object', $res);
         $this->assertNotEmpty($res->id);
         $this->assertNotEmpty($res->name);
-        $this->assertEquals(basename($imagePath), $res->name);
     }
 
     /**
@@ -299,6 +306,23 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     public function testGetMe()
     {
         $res = $this->object->getMe();
+        $this->assertInternalType('object', $res);
+        $this->assertNotNull($res);
+        $this->assertNotEmpty($res);
+        $this->assertNotEmpty($res->id);
+    }
+
+    /**
+     * @covers \Redbooth\Service::createConversation
+     * @group creators
+     */
+    public function testCreateConversation()
+    {
+        $faker = \Faker\Factory::create();
+        $res = $this->object->createConversation($_ENV['projectId'],
+                                                 $faker->sentence,
+                                                 $faker->paragraph,
+                                                 false);
         $this->assertInternalType('object', $res);
         $this->assertNotNull($res);
         $this->assertNotEmpty($res);
