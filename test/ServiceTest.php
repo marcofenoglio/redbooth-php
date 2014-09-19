@@ -39,7 +39,12 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
         $this->object->expects($this->any())
                       ->method('getMe')
                       ->will($this->returnValue(json_decode(file_get_contents('test/mocks/getMe.mock'))));
-
+        $this->object->expects($this->any())
+                      ->method('post')
+                      ->will($this->returnValue(json_decode(file_get_contents('test/mocks/post.mock'))));
+        $this->object->expects($this->any())
+                      ->method('postFile')
+                      ->will($this->returnValue(json_decode(file_get_contents('test/mocks/postFile.mock'))));
     }
     /**
      * Sets up the fixture, for example, opens a network connection.
@@ -105,7 +110,6 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
         $this->assertInternalType('object', $res);
         $this->assertNotEmpty($res->id);
         $this->assertNotEmpty($res->name);
-        $this->assertEquals(basename($imagePath), $res->name);
     }
 
     /**
