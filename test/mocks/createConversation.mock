@@ -1,0 +1,12 @@
+{
+   "is_private" : false,
+   "last_activity_id" : null,
+   "name" : "Reprehenderit et tenetur velit nihil.",
+   "created_at" : 1411144885,
+   "updated_at" : 1411144885,
+   "type" : "Conversation",
+   "id" : 1,
+   "user_id" : 1,
+   "project_id" : 1,
+   "comments_count" : 1
+}
