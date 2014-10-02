@@ -60,4 +60,16 @@ class Service extends Base
         $res = $this->post('conversations', $data);
         return $res;
     }
+
+    public function createTask($projectId, $tasklistId, $name, $description, $isPrivate = false, $status = 'open')
+    {
+        $data = array('project_id' => $projectId,
+                      'task_list_id' => $tasklistId,
+                      'name' => $name,
+                      'description' => $description,
+                      'is_private' => $isPrivate,
+                      'status' => $status);
+        $res = $this->post('tasks', $data);
+        return $res;
+    }
 }

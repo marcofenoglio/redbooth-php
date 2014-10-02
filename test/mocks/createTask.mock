@@ -1,0 +1,31 @@
+{
+   "is_private" : false,
+   "description_html" : "<p>\nPorro ut sint minima natus alias corrupti qui. Enim vitae eos inventore aliquam quia autem. Est est aut beatae a.</p>",
+   "status" : "open",
+   "description_updated_by_user_id" : 1,
+   "position" : 1,
+   "assigned_id" : null,
+   "task_list_id" : 1,
+   "due_on" : null,
+   "record_conversion_id" : null,
+   "record_conversion_type" : null,
+   "created_at" : 1,
+   "updated_by_id" : null,
+   "metadata" : {},
+   "id" : 14873942,
+   "subtasks_count" : 0,
+   "resolved_subtasks_count" : 0,
+   "project_id" : 1,
+   "comments_count" : 1,
+   "watcher_ids" : [
+      1
+   ],
+   "name" : "numquam",
+   "last_activity_id" : null,
+   "deleted" : false,
+   "urgent" : false,
+   "description" : "Porro ut sint minima natus alias corrupti qui. Enim vitae eos inventore aliquam quia autem. Est est aut beatae a.",
+   "updated_at" : 1,
+   "type" : "Task",
+   "user_id" : 1
+}

@@ -48,6 +48,9 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
         $this->object->expects($this->any())
                       ->method('createConversation')
                       ->will($this->returnValue(json_decode(file_get_contents('test/mocks/createConversation.mock'))));
+        $this->object->expects($this->any())
+                      ->method('createTask')
+                      ->will($this->returnValue(json_decode(file_get_contents('test/mocks/createTask.mock'))));
     }
     /**
      * Sets up the fixture, for example, opens a network connection.
@@ -323,6 +326,24 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
                                                  $faker->sentence,
                                                  $faker->paragraph,
                                                  false);
+        $this->assertInternalType('object', $res);
+        $this->assertNotNull($res);
+        $this->assertNotEmpty($res);
+        $this->assertNotEmpty($res->id);
+    }
+
+    /**
+     * @covers \Redbooth\Service::createTask
+     * @group creators
+     */
+    public function testCreateTask()
+    {
+        $faker = \Faker\Factory::create();
+        $res = $this->object->createTask($_ENV['projectId'],
+                                         $_ENV['tasklistId'],
+                                         $faker->word,
+                                         $faker->paragraph);
+        file_put_contents('/tmp/task.mock', json_encode($res));
         $this->assertInternalType('object', $res);
         $this->assertNotNull($res);
         $this->assertNotEmpty($res);
