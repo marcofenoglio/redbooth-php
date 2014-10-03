@@ -72,4 +72,15 @@ class Service extends Base
         $res = $this->post('tasks', $data);
         return $res;
     }
+
+    public function createNote($projectId, $name, $content, $isPrivate = false, $shared = true)
+    {
+        $data = array('project_id' => $projectId,
+                      'name' => $name,
+                      'content' => $content,
+                      'is_private' => $isPrivate,
+                      'shared' => $shared);
+        $res = $this->post('notes', $data);
+        return $res;
+    }
 }
