@@ -13,7 +13,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
         $this->object = $this->getMockBuilder('\Redbooth\Service')
                               ->disableOriginalConstructor()
                               ->getMock();
-        $methods = array(
+        $mapMethods = array(
             'getActivities',
 //          'getComments',
             'getConversations',
@@ -30,31 +30,29 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
             'getMe',
         );
         $map = array();
-        foreach ($methods as $method) {
+        foreach ($mapMethods as $method) {
             $map[] = array($method, array(), json_decode(file_get_contents('test/mocks/' . $method . '.mock')));
         }
         $this->object->expects($this->any())
                       ->method('__call')
                       ->will($this->returnValueMap($map));
-        $this->object->expects($this->any())
-                      ->method('getMe')
-                      ->will($this->returnValue(json_decode(file_get_contents('test/mocks/getMe.mock'))));
-        $this->object->expects($this->any())
-                      ->method('post')
-                      ->will($this->returnValue(json_decode(file_get_contents('test/mocks/post.mock'))));
-        $this->object->expects($this->any())
-                      ->method('postFile')
-                      ->will($this->returnValue(json_decode(file_get_contents('test/mocks/postFile.mock'))));
-        $this->object->expects($this->any())
-                      ->method('createConversation')
-                      ->will($this->returnValue(json_decode(file_get_contents('test/mocks/createConversation.mock'))));
-        $this->object->expects($this->any())
-                      ->method('createTask')
-                      ->will($this->returnValue(json_decode(file_get_contents('test/mocks/createTask.mock'))));
-        $this->object->expects($this->any())
-                      ->method('createNote')
-                      ->will($this->returnValue(json_decode(file_get_contents('test/mocks/createNote.mock'))));
+
+        $mockMethods = array(
+            'getMe',
+            'post',
+            'postFile',
+            'createConversation',
+            'createTask',
+            'createTaskList',
+            'createNote'
+        );
+        foreach ($mockMethods as $method) {
+            $this->object->expects($this->any())
+                          ->method($method)
+                          ->will($this->returnValue(json_decode(file_get_contents('test/mocks/' . $method . '.mock'))));            
+        }
     }
+
     /**
      * Sets up the fixture, for example, opens a network connection.
      * This method is called before a test is executed.
@@ -346,6 +344,21 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
                                          $_ENV['tasklistId'],
                                          $faker->word,
                                          $faker->paragraph);
+        $this->assertInternalType('object', $res);
+        $this->assertNotNull($res);
+        $this->assertNotEmpty($res);
+        $this->assertNotEmpty($res->id);
+    }
+
+    /**
+     * @covers \Redbooth\Service::createTaskList
+     * @group creators
+     */
+    public function testCreateTaskList()
+    {
+        $faker = \Faker\Factory::create();
+        $res = $this->object->createTaskList($_ENV['projectId'],
+                                             $faker->sentence);
         $this->assertInternalType('object', $res);
         $this->assertNotNull($res);
         $this->assertNotEmpty($res);
