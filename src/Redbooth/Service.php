@@ -73,6 +73,15 @@ class Service extends Base
         return $res;
     }
 
+    public function createTaskList($projectId, $name, $archived = false)
+    {
+        $data = array('project_id' => $projectId,
+                      'name' => $name,
+                      'archived' => $archived);
+        $res = $this->post('task_lists', $data);
+        return $res;
+    }
+
     public function createNote($projectId, $name, $content, $isPrivate = false, $shared = true)
     {
         $data = array('project_id' => $projectId,
