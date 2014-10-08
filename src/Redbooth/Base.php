@@ -32,7 +32,6 @@ class Base extends OAuth2
             ->body(json_encode($data))
             ->addHeaders($this->addAuthorizationHeader())
             ->sendsJson()
-            ->expectsJson()
             ->send();
         $this->throwIfTokenInvalid($res);
         return $res->body;

@@ -43,6 +43,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
             'postFile',
             'createConversation',
             'createTask',
+            'createTaskList',
             'createNote'
         );
         foreach ($mockMethods as $method) {
@@ -343,6 +344,21 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
                                          $_ENV['tasklistId'],
                                          $faker->word,
                                          $faker->paragraph);
+        $this->assertInternalType('object', $res);
+        $this->assertNotNull($res);
+        $this->assertNotEmpty($res);
+        $this->assertNotEmpty($res->id);
+    }
+
+    /**
+     * @covers \Redbooth\Service::createTaskList
+     * @group creators
+     */
+    public function testCreateTaskList()
+    {
+        $faker = \Faker\Factory::create();
+        $res = $this->object->createTaskList($_ENV['projectId'],
+                                             $faker->sentence);
         $this->assertInternalType('object', $res);
         $this->assertNotNull($res);
         $this->assertNotEmpty($res);

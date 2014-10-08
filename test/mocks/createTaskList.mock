@@ -1,0 +1,20 @@
+{
+   "archived_tasks_count" : 0,
+   "position" : 3,
+   "created_at" : 1412763377,
+   "metadata" : {},
+   "updated_by_id" : null,
+   "id" : 1,
+   "tasks_count" : 0,
+   "project_id" : 1,
+   "name" : "Sint consequatur aliquam ut assumenda.",
+   "deleted" : false,
+   "archived" : false,
+   "finish_on" : null,
+   "last_comment_id" : null,
+   "updated_at" : 1412763377,
+   "start_on" : null,
+   "user_id" : 1,
+   "type" : "TaskList",
+   "completed_at" : null
+}
