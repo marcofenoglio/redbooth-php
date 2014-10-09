@@ -44,7 +44,8 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
             'createConversation',
             'createTask',
             'createTaskList',
-            'createNote'
+            'createNote',
+            'createComment'
         );
         foreach ($mockMethods as $method) {
             $this->object->expects($this->any())
@@ -348,6 +349,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
         $this->assertNotNull($res);
         $this->assertNotEmpty($res);
         $this->assertNotEmpty($res->id);
+        return $res->id;
     }
 
     /**
@@ -375,6 +377,25 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
         $res = $this->object->createNote($_ENV['projectId'],
                                          $faker->word,
                                          $faker->paragraph);
+        $this->assertInternalType('object', $res);
+        $this->assertNotNull($res);
+        $this->assertNotEmpty($res);
+        $this->assertNotEmpty($res->id);
+    }
+
+    /**
+     * @covers \Redbooth\Service::createComment
+     * @group creators
+     * @depends testCreateTask
+     */
+    public function testCreateComment($taskId)
+    {
+        $faker = \Faker\Factory::create();
+        $res = $this->object->createComment('task',
+                                            $taskId,
+                                            $faker->paragraph,
+                                            $faker->numberBetween(1, 120));
+        file_put_contents('/tmp/c.json', json_encode($res));
         $this->assertInternalType('object', $res);
         $this->assertNotNull($res);
         $this->assertNotEmpty($res);
