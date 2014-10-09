@@ -92,4 +92,22 @@ class Service extends Base
         $res = $this->post('notes', $data);
         return $res;
     }
+
+    public function createComment($targetType, $targetId, $body, $minutes = null, $timeTrackingOn = null)
+    {
+        $data = array('target_type' => $targetType,
+                      'target_id' => $targetId,
+                      'body' => $body);
+
+        if (!empty($minutes)) {
+            $data['minutes'] = $minutes;
+        }
+
+        if (!empty($timeTrackingOn)) {
+            $data['time_tracking_on'] = $timeTrackingOn;
+        }
+
+        $res = $this->post('comments', $data);
+        return $res;
+    }
 }
