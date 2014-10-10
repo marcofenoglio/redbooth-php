@@ -73,6 +73,20 @@ class Service extends Base
         return $res;
     }
 
+    public function createSubTask($taskId, $name, $resolved = false, $position = 0)
+    {
+        $data = array('task_id' => $taskId,
+                      'name' => $name,
+                      'resolved' => $resolved);
+
+        if ($position) {
+            $data['position'] = $position;
+        }
+
+        $res = $this->post('subtasks', $data);
+        return $res;
+    }
+
     public function createTaskList($projectId, $name, $archived = false)
     {
         $data = array('project_id' => $projectId,

@@ -43,6 +43,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
             'postFile',
             'createConversation',
             'createTask',
+            'createSubTask',
             'createTaskList',
             'createNote',
             'createComment'
@@ -350,6 +351,22 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
         $this->assertNotEmpty($res);
         $this->assertNotEmpty($res->id);
         return $res->id;
+    }
+
+    /**
+     * @covers \Redbooth\Service::createSubTask
+     * @depends testCreateTask
+     * @group creators
+     */
+    public function testCreateSubTask($taskId)
+    {
+        $faker = \Faker\Factory::create();
+        $res = $this->object->createSubTask($taskId,
+                                            $faker->sentence);
+        $this->assertInternalType('object', $res);
+        $this->assertNotNull($res);
+        $this->assertNotEmpty($res);
+        $this->assertNotEmpty($res->id);
     }
 
     /**

@@ -4,7 +4,7 @@
     "description": "Official Redbooth PHP client",
     "keywords": ["redbooth", "api", "tasks", "conversations"],
     "license": "MIT",
-    "version": "0.0.10",
+    "version": "0.0.11",
     "require": {
         "nategood/httpful": "*"
     },
