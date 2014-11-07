@@ -62,7 +62,8 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
      */
     protected function setUp()
     {
-        if (!empty(GlobalVar::getEnv('integrationTests'))) {
+        $integrationTests = GlobalVar::getEnv('integrationTests');
+        if (!empty($integrationTests)) {
             $this->object = new \Redbooth\Service(GlobalVar::getEnv('oauthClientId'),
                                                 GlobalVar::getEnv('oauthClientSecret'),
                                                 GlobalVar::getEnv('oauthAccessToken'),
