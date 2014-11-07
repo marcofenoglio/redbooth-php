@@ -39,9 +39,9 @@ class OAuth2
                     preg_match(
                         '/error=[\'"]?(\w+?)[\'"]?\W/u',
                         $headers['www-authenticate'],
-                        $m
+                        $matches
                     ) &&
-                    $m[1] == 'invalid_token') {
+                    $matches[1] == 'invalid_token') {
                     throw new Exception\InvalidTokenException();
                 }
             }

@@ -1,5 +1,6 @@
 <?php
 namespace Redbooth\Test;
+require_once 'GlobalVar.php';
 
 class ServiceTest extends \PHPUnit_Framework_TestCase
 {
@@ -61,12 +62,12 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
      */
     protected function setUp()
     {
-        if (!empty($_ENV['integrationTests'])) {
-            $this->object = new \Redbooth\Service($_ENV['oauthClientId'],
-                                                $_ENV['oauthClientSecret'],
-                                                $_ENV['oauthAccessToken'],
-                                                $_ENV['oauthRefreshToken'],
-                                                $_ENV['oauthRedirectUrl']);
+        if (!empty(GlobalVar::getEnv('integrationTests'))) {
+            $this->object = new \Redbooth\Service(GlobalVar::getEnv('oauthClientId'),
+                                                GlobalVar::getEnv('oauthClientSecret'),
+                                                GlobalVar::getEnv('oauthAccessToken'),
+                                                GlobalVar::getEnv('oauthRefreshToken'),
+                                                GlobalVar::getEnv('oauthRedirectUrl'));
         } else {
             $this->setUpMocking();
         }
@@ -88,8 +89,8 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     {
         $faker = \Faker\Factory::create();
         $data = array('name' => $faker->sentence,
-                      'project_id' => $_ENV['projectId'],
-                      'task_list_id' => $_ENV['tasklistId'],
+                      'project_id' => GlobalVar::getEnv('projectId'),
+                      'task_list_id' => GlobalVar::getEnv('tasklistId'),
                       'comments_attributes' => array(array('body' => $faker->paragraph)),
                       'type' => 'Task',
                       'is_private' => false,
@@ -109,7 +110,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     {
         $faker = \Faker\Factory::create();
         $imagePath = $faker->image;
-        $data = array('project_id' => $_ENV['projectId'],
+        $data = array('project_id' => GlobalVar::getEnv('projectId'),
                       'backend' => 'redbooth',
                       'is_dir' => 'false');
         $res = $this->object->postFile('files',
@@ -325,7 +326,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     public function testCreateConversation()
     {
         $faker = \Faker\Factory::create();
-        $res = $this->object->createConversation($_ENV['projectId'],
+        $res = $this->object->createConversation(GlobalVar::getEnv('projectId'),
                                                  $faker->sentence,
                                                  $faker->paragraph,
                                                  false);
@@ -342,8 +343,8 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     public function testCreateTask()
     {
         $faker = \Faker\Factory::create();
-        $res = $this->object->createTask($_ENV['projectId'],
-                                         $_ENV['tasklistId'],
+        $res = $this->object->createTask(GlobalVar::getEnv('projectId'),
+                                         GlobalVar::getEnv('tasklistId'),
                                          $faker->word,
                                          $faker->paragraph);
         $this->assertInternalType('object', $res);
@@ -376,7 +377,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     public function testCreateTaskList()
     {
         $faker = \Faker\Factory::create();
-        $res = $this->object->createTaskList($_ENV['projectId'],
+        $res = $this->object->createTaskList(GlobalVar::getEnv('projectId'),
                                              $faker->sentence);
         $this->assertInternalType('object', $res);
         $this->assertNotNull($res);
@@ -391,7 +392,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     public function testCreateNote()
     {
         $faker = \Faker\Factory::create();
-        $res = $this->object->createNote($_ENV['projectId'],
+        $res = $this->object->createNote(GlobalVar::getEnv('projectId'),
                                          $faker->word,
                                          $faker->paragraph);
         $this->assertInternalType('object', $res);
