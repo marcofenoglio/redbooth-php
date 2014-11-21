@@ -1,0 +1,22 @@
+{
+   "pinned" : false,
+   "backend" : "redbooth",
+   "name" : "image-1416406415699.png",
+   "public_token" : null,
+   "type" : "file",
+   "is_downloadable" : true,
+   "parent_id" : null,
+   "can_be_moved" : true,
+   "mime_type" : "image/png",
+   "updated_at" : 1416406418,
+   "can_be_deleted" : true,
+   "backend_id" : "1",
+   "created_at" : 1416406416,
+   "is_previewable" : true,
+   "is_dir" : false,
+   "id" : 1,
+   "project_id" : 1,
+   "is_private" : false,
+   "user_id" : 1,
+   "size" : 1
+}

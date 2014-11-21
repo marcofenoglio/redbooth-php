@@ -28,6 +28,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
             'getTaskLists',
             'getTasks',
             'getUsers',
+            'getFiles',
             'getMe',
         );
         $map = array();
@@ -47,7 +48,9 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
             'createSubTask',
             'createTaskList',
             'createNote',
-            'createComment'
+            'createComment',
+            'getFile',
+            'downloadFile'
         );
         foreach ($mockMethods as $method) {
             $this->object->expects($this->any())
@@ -305,6 +308,50 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
             $this->assertInternalType('object', $item);
             $this->assertNotEmpty($item->id);
         }
+    }
+
+    /**
+     * @covers RedboothService::getFiles
+     * @group listGetters
+     */
+    public function testGetFiles()
+    {
+        $res = $this->object->getFiles();
+        $this->assertInternalType('array', $res);
+        foreach ($res as $item) {
+            $this->assertNotNull($item);
+            $this->assertInternalType('object', $item);
+            $this->assertNotEmpty($item->id);
+        }
+        // make the last file id available to dependents
+        return $item;
+    }
+
+    /**
+     * @covers RedboothService::getFile
+     * @group fileGetters
+     * @depends testGetFiles
+     */
+    public function testGetFile($file)
+    {
+        $res = $this->object->getFile($file->id);
+        $this->assertInternalType('object', $res);
+        $this->assertNotNull($res);
+        $this->assertNotEmpty($res);
+        $this->assertNotEmpty($res->id);
+        $this->assertNotEmpty($res->name);
+    }
+
+    /**
+     * @covers RedboothService::downloadFile
+     * @group fileDownloaders
+     * @depends testGetFiles
+     */
+    public function testDownloadFile($file)
+    {
+        $res = $this->object->downloadFile($file->id, $file->name);
+        $this->assertInternalType('string', $res);
+        $this->assertNotEmpty($res);
     }
 
     /**

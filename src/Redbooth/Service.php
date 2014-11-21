@@ -21,7 +21,8 @@ class Service extends Base
         'subtasks',
         'task_lists',
         'tasks',
-        'users'
+        'users',
+        'files'
     );
 
     public function __call($name, $arguments)
@@ -34,16 +35,25 @@ class Service extends Base
         // check if the method can be called
         if (in_array($name, $this->listGetters)) {
             // if there are any arguments, build the HTTP query
-            if (!empty($arguments)) {
-                $query = '?' . http_build_query($arguments);
+            if (!empty($arguments) && !empty($arguments[0])) {
+                $query = '?' . http_build_query($arguments[0]);
             } else {
                 $query = '';
             }
-
             return $this->get($name . $query);
         } else {
             throw new Exception\MethodNotFoundException();
         }
+    }
+
+    public function getFile($id)
+    {
+        return $this->get('files/' . urlencode($id));
+    }
+
+    public function downloadFile($id, $filename)
+    {
+        return $this->get('files/' . urlencode($id) . '/download/' . urlencode($filename));
     }
 
     public function getMe()
