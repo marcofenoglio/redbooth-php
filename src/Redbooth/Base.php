@@ -14,7 +14,7 @@ class Base extends OAuth2
     {
         return implode('/', array($this->baseUrl,
                                   $this->apiPath,
-                                  urlencode($method)));
+                                  $method));
     }
 
     public function get($method)
@@ -23,6 +23,11 @@ class Base extends OAuth2
             ->addHeaders($this->addAuthorizationHeader())
             ->send();
         $this->throwIfTokenInvalid($res);
+        // follow redirect if present
+        if ($res->code == 302) {
+            $url = $res->meta_data['redirect_url'];
+            $res = \Httpful\Request::get($url)->send();
+        }
         return $res->body;
     }
 

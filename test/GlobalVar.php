@@ -5,16 +5,16 @@ class GlobalVar
 {
     public function getGet($name)
     {
-        return filter_input(INPUT_GET, $name);
+        return filter_var($_GET[$name]);
     }
 
     public function getPost($name)
     {
-        return filter_input(INPUT_POST, $name);
+        return filter_var($_POST[$name]);
     }
 
     public static function getEnv($name)
     {
-        return filter_input(INPUT_ENV, $name);
+        return filter_var($_ENV[$name]);
     }
 }
