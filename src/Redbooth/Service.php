@@ -7,8 +7,6 @@
  */
 namespace Redbooth;
 
-require 'Base.php';
-
 /**
  * Redbooth service connector.
  *
