@@ -1,4 +1,10 @@
 <?php
+/**
+ * The Redbooth API low-level OAuth2 Utilities.
+ *
+ * @author Bruno Pedro <bpedro@redbooth.com>
+ * @package Redbooth
+ */
 namespace Redbooth;
 
 /**

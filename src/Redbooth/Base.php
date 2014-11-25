@@ -1,4 +1,10 @@
 <?php
+/**
+ * The Redbooth API low-level HTTP Layer.
+ *
+ * @author Bruno Pedro <bpedro@redbooth.com>
+ * @package Redbooth
+ */
 namespace Redbooth;
 
 /**
