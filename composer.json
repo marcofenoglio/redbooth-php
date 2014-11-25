@@ -17,6 +17,8 @@
         "phpunit/phpunit": "~4.0",
         "squizlabs/php_codesniffer": "~1.5",
     	"phpunit/phpunit-skeleton-generator": "*",
-    	"fzaninotto/faker": "*"
+    	"fzaninotto/faker": "*",
+        "phpdocumentor/phpdocumentor": "2.*",
+        "evert/phpdoc-md" : "~0.0.7"
     }
 }
