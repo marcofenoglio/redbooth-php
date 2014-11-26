@@ -1,0 +1,11 @@
+{
+    "name": "redbooth/redbooth-me-example",
+    "type": "project",
+    "description": "me.php Redbooth PHP client demo.",
+    "keywords": ["redbooth", "api", "tasks", "conversations"],
+    "license": "MIT",
+    "version": "0.0.1",
+    "require": {
+        "redbooth/redbooth": "*"
+    }
+}
