@@ -3,19 +3,25 @@
  * The Redbooth API low-level HTTP Layer.
  *
  * @author Bruno Pedro <bpedro@redbooth.com>
- * @package Redbooth
  */
 namespace Redbooth;
 
 /**
  * Redbooth base service
+ *
+ * @package Redbooth
  */
 class Base extends OAuth2
 {
-
-    private $baseUrl = 'https://redbooth.com';
-    private $apiPath = 'api/3';
-
+    /**
+     * Build a complete endpoint URL.
+     *
+     * Build an endpoint URL by concatenating the base
+     * URL, the API path and the given method.
+     *
+     * @param string $method The method that you want to call.
+     * @return string A complete endpoint URL.
+     */
     private function buildEndpointUrl($method)
     {
         return implode('/', array($this->baseUrl,
@@ -23,6 +29,14 @@ class Base extends OAuth2
                                   $method));
     }
 
+    /**
+     * Perform a GET request.
+     *
+     * Perform a GET request to a given API method.
+     *
+     * @param string $method The method that you want to call.
+     * @return object An object representation of the response.
+     */
     public function get($method)
     {
         $res = \Httpful\Request::get($this->buildEndpointUrl($method))
@@ -37,6 +51,15 @@ class Base extends OAuth2
         return $res->body;
     }
 
+    /**
+     * Perform a POST request.
+     *
+     * Perform a POST request to a given API method.
+     *
+     * @param string $method The method that you want to call.
+     * @param array $data Data to be POSTed.
+     * @return object An object representation of the response.
+     */
     public function post($method, $data)
     {
         $res = \Httpful\Request::post($this->buildEndpointUrl($method))
@@ -48,6 +71,18 @@ class Base extends OAuth2
         return $res->body;
     }
 
+    /**
+     * Upload a file.
+     *
+     * A variation of the post() method that handles a file
+     * upload by setting the appropriate MIME type.
+     *
+     * @param string $method The method that you want to call.
+     * @param array $data Data to be POSTed.
+     * @param string $filePath The complete path of the file you want to upload.
+     * @param string $fileName The name of the file you're uploading. Defaults to 'asset'.
+     * @return object An object representation of the response.
+     */
     public function postFile($method, $data, $filePath, $fileName = 'asset')
     {
         $finfo = finfo_open(FILEINFO_MIME_TYPE);
