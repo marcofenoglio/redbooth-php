@@ -3,11 +3,8 @@
  * The Redbooth API Service Layer.
  *
  * @author Bruno Pedro <bpedro@redbooth.com>
- * @package Redbooth
  */
 namespace Redbooth;
-
-require 'Base.php';
 
 /**
  * Redbooth service connector.
@@ -29,6 +26,7 @@ require 'Base.php';
  * @method object getTasks() Get a list of tasks.
  * @method object getUsers() Get a list of users.
  * @method object getFiles() Get a list of files.
+ * @package Redbooth
  */
 class Service extends Base
 {
