@@ -86,7 +86,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers RedboothService::post
+     * @covers \Redbooth\Service::post
      * @group posters
      */
     public function testPost()
@@ -107,7 +107,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers RedboothService::postFile
+     * @covers \Redbooth\Service::postFile
      * @group filePosters
      */
     public function testPostFile()
@@ -127,7 +127,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers RedboothService::getActivities
+     * @covers \Redbooth\Service::__call
      * @group listGetters
      */
     public function testGetActivities()
@@ -141,7 +141,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers RedboothService::getComments
+     * @covers \Redbooth\Service::__call
      * @group listGetters
      */
     public function testGetComments()
@@ -156,7 +156,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers RedboothService::getConversations
+     * @covers \Redbooth\Service::__call
      * @group listGetters
      */
     public function testGetConversations()
@@ -170,7 +170,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers RedboothService::getMemberships
+     * @covers \Redbooth\Service::__call
      * @group listGetters
      */
     public function testGetMemberships()
@@ -184,7 +184,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers RedboothService::getNotes
+     * @covers \Redbooth\Service::__call
      * @group listGetters
      */
     public function testGetNotes()
@@ -198,7 +198,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers RedboothService::getNotifications
+     * @covers \Redbooth\Service::__call
      * @group listGetters
      */
     public function testGetNotifications()
@@ -212,7 +212,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers RedboothService::getOrganizations
+     * @covers \Redbooth\Service::__call
      * @group listGetters
      */
     public function testGetOrganizations()
@@ -226,7 +226,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers RedboothService::getPeople
+     * @covers \Redbooth\Service::__call
      * @group listGetters
      */
     public function testGetPeople()
@@ -240,7 +240,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers RedboothService::getProjects
+     * @covers \Redbooth\Service::__call
      * @group listGetters
      */
     public function testGetProjects()
@@ -254,7 +254,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers RedboothService::getTasks
+     * @covers \Redbooth\Service::__call
      * @group listGetters
      */
     public function testGetSubtasks()
@@ -268,7 +268,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers RedboothService::getTaskLists
+     * @covers \Redbooth\Service::__call
      * @group listGetters
      */
     public function testGetTaskLists()
@@ -282,7 +282,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers RedboothService::getUsers
+     * @covers \Redbooth\Service::__call
      * @group listGetters
      */
     public function testGetUsers()
@@ -296,7 +296,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers RedboothService::getTasks
+     * @covers \Redbooth\Service::__call
      * @group listGetters
      */
     public function testGetTasks()
@@ -311,7 +311,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers RedboothService::getFiles
+     * @covers \Redbooth\Service::__call
      * @group listGetters
      */
     public function testGetFiles()
@@ -328,7 +328,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers RedboothService::getFile
+     * @covers \Redbooth\Service::getFile
      * @group fileGetters
      * @depends testGetFiles
      */
@@ -343,7 +343,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers RedboothService::downloadFile
+     * @covers \Redbooth\Service::downloadFile
      * @group fileDownloaders
      * @depends testGetFiles
      */

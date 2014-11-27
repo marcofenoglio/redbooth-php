@@ -1,5 +1,9 @@
 <phpunit bootstrap="./src/autoload.php">
 
+   <logging>
+      <log type="coverage-clover" target="build/logs/clover.xml"/>
+   </logging>
+
    <php>
       <env name="oauthClientId" value="" />
       <env name="oauthClientSecret" value="" />
