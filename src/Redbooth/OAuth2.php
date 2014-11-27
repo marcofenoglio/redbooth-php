@@ -141,7 +141,6 @@ class OAuth2
             ->expectsJson()
             ->sendsType(\Httpful\Mime::FORM)
             ->send();
-            var_dump($data);
         $this->throwIfTokenInvalid($res);
         return $res->body;
     }
