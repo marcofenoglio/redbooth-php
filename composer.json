@@ -19,6 +19,7 @@
     	"phpunit/phpunit-skeleton-generator": "*",
     	"fzaninotto/faker": "*",
         "phpdocumentor/phpdocumentor": "2.*",
-        "evert/phpdoc-md" : "~0.0.7"
+        "evert/phpdoc-md" : "~0.0.7",
+        "satooshi/php-coveralls": "dev-master"
     }
 }
