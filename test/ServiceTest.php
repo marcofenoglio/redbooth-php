@@ -41,6 +41,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
 
         $mockMethods = array(
             'getMe',
+            'getUser',
             'post',
             'postFile',
             'createConversation',
@@ -293,6 +294,21 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
             $this->assertInternalType('object', $item);
             $this->assertNotEmpty($item->id);
         }
+        return $item->id;
+    }
+
+    /**
+     * @covers \Redbooth\Service::getUser
+     * @group getters
+     * @depends testGetUsers
+     */
+    public function testGetUser($id)
+    {
+        $res = $this->object->getUser($id);
+        $this->assertInternalType('object', $res);
+        $this->assertNotNull($res);
+        $this->assertNotEmpty($res);
+        $this->assertNotEmpty($res->id);
     }
 
     /**
