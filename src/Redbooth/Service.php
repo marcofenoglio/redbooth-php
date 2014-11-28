@@ -65,8 +65,9 @@ class Service extends Base
     {
         // text conversion
         // from getExampleMethod to example_method
-        $name = strtolower(preg_replace('/([A-Z])/', '_$1', $name));
-        $name = preg_replace('/^get_/', '', $name);
+        $camel = new \Camel\CaseTransformer(new \Camel\Format\CamelCase,
+                                            new \Camel\Format\SnakeCase);
+        $name = $camel->transform(preg_replace('/^get/', '', $name));
 
         // check if the method can be called
         if (in_array($name, $this->listGetters)) {
@@ -109,6 +110,20 @@ class Service extends Base
     public function downloadFile($id, $filename)
     {
         return $this->get('files/' . urlencode($id) . '/download/' . urlencode($filename));
+    }
+
+    /**
+     * Get information about a particular user.
+     *
+     * Get all the available information about the
+     * user identified by a given ID.
+     *
+     * @param integer $id The ID of the user to read.
+     * @return object An object representation of the user.
+     */
+    public function getUser($id)
+    {
+        return $this->get('users/' . urlencode($id));
     }
 
     /**
