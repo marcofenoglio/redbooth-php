@@ -113,6 +113,20 @@ class Service extends Base
     }
 
     /**
+     * Get information about a particular user.
+     *
+     * Get all the available information about the
+     * user identified by a given ID.
+     *
+     * @param integer $id The ID of the user to read.
+     * @return object An object representation of the user.
+     */
+    public function getUser($id)
+    {
+        return $this->get('users/' . urlencode($id));
+    }
+
+    /**
      * Get information about the authorized user.
      *
      * Get all the available information about the
