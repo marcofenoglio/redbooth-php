@@ -65,8 +65,10 @@ class Service extends Base
     {
         // text conversion
         // from getExampleMethod to example_method
-        $camel = new \Camel\CaseTransformer(new \Camel\Format\CamelCase,
-                                            new \Camel\Format\SnakeCase);
+        $camel = new \Camel\CaseTransformer(
+            new \Camel\Format\CamelCase,
+            new \Camel\Format\SnakeCase
+        );
         $name = $camel->transform(preg_replace('/^get/', '', $name));
 
         // check if the method can be called
