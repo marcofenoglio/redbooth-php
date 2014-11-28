@@ -186,6 +186,25 @@ as specified by the filename parameter.
 
 
 
+### \Redbooth\Service::getUser()
+
+```
+object Redbooth\Service::\Redbooth\Service::getUser()(integer $id)
+```
+
+Get information about a particular user.
+
+Get all the available information about the
+user identified by a given ID.
+
+* Visibility: **public**
+
+#### Arguments
+
+* $id **integer** - &lt;p&gt;The ID of the user to read.&lt;/p&gt;
+
+
+
 ### \Redbooth\Service::getMe()
 
 ```

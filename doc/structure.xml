@@ -388,7 +388,7 @@ access or refresh token.</long-description>
     </class>
     <source>eJxdjsEKwjAQRO/5ijn3UD9AUSsoeFCKZy9psxrR7oYkpYL477ZFG/C0h9k3bxYrZx3ULMsUMhQ4kalEosX2WZOLN+G8D4ZsrdtoxWPjWxaUZLxgUbnhrv2Xymtplv3zTLFuKDhd09R4nhrnKvka6ksNWCIu0rIB/XsnDNF66RidJYZmFOX+h99Capj29va7vqYB4676oUPAYcSOEncDkQz0jMQmIG1VL/VWH5/XX/A=</source>
   </file>
-  <file path="Redbooth/OAuth2.php" generated-path="Redbooth.OAuth2.html" hash="2ebb14724a144b7de7328a766e0fd04e" package="Default">
+  <file path="Redbooth/OAuth2.php" generated-path="Redbooth.OAuth2.html" hash="561b568ef00401760e580ddd162f932a" package="Default">
     <docblock line="0">
       <description>The Redbooth API low-level OAuth2 Utilities.</description>
       <long-description></long-description>
@@ -607,9 +607,9 @@ is not valid.</long-description>
       <error line="89" code="PPC:ERR-50015">Argument $headers is missing from the Docblock of addAuthorizationHeader</error>
       <error line="101" code="PPC:ERR-50015">Argument $res is missing from the Docblock of throwIfTokenInvalid</error>
     </parse_markers>
-    <source>eJytV9ty2zYQfddXoB1PKLmylKZ9siM5SppO1IknHteePlgeDUSuRNQUwQKgFafjf+/iwgtISqnT8kUSsWfPLvbsAnp9nsVZb3x83CPH5DoGcgXRinMVk9nlnCR8d5LAAyTk0yxX8Styo1jCFAM5QnsNeUPxPRfkrchTTi4hEpy8XmX6841wrkYh307ReNxL6RZkRsOK5qxXkJfEjiovqAomxN3TTQU1HsOESukgvb97BB/jTz86ujAEXM8EVxAqiMqFBypMujrLFZVAbq4+jtzq2HyWGHKkDW5EQiYkiJXK5Ol4XM8twCSeTZxRTDWjQhG+JspFcigImrFLjcEg8Ov4p4Os7IEqaHHOf6mThQmDVDX5DJIc2cV5hHRpniTP55IQClDP5Pvdgr6V0ynHWSl+D+keOmtyrS3+K5uAtQAZH6RzNv8TX8QEaqJLLCWdNbGa7WbTHm3zhDyVSuSh4qLw5xlVy8gdAnsASVi65mJLFeMpSQEiFKjiBYqlCgTFCHcM9aqq0LUKaBqhNpTE2RLSxIZQAKlSgq1yZcaLFwg2v6BbgoGwdFNT57Xv3L5HnY8OAp3MGuB3FmyFu89BXTgNfJfsmnBPCA18p5DaDqrStvB7hZGvEhaSdZ6GpmLLZVnUfrmXQ393hl6uQz/0oRfIwJDY4aufIxUzeTKtjZCS5KzbqOx7L4SWsd+19fhapo2O86LvMK73Sz01a/rU6p5ZFKGSy4FjzkD2xfZDDDSCViu9i2m6wc7R7WAtJKFC0EeyeiQ0inR1S48F6C1QAYLM/oV/pxPr8qhg0BJB5Ial2Gse7YjM1wS2mUJ2bOGdQ+5YkpAVdr0AHCVRJUOsRy5SZzVrpMDSMMlNCjq9Q9vRPNZKTeIWeGl+MLB+mcnEUvUHLbU5i9vAwwd3+qR0GxiQUYeGKh245ApX+6p+HQu+01WCzyFkJmy2xu3zOpcwPR4faMKiPTXiqz91m6LOJJmlxU8BGb5A8dtt49axzLBToSqD0iFIsiguQYv3RSiLuSU1qZVvv7btxt98bUDOQV8H1txlzNO8x47lEZDphPz88uWgZlAvhW0itHW/T6aKz2z1zjyA9vqdEWG/KuNutzvREsKtYCGKMLgbNIkKbOulzRI2Szybwrh7XT/BGITgYnK7CL6/O+8vdj+cD+z3xR/jPBjuBR4K8wDKhAOy02BAXrzoXChQtz+illHMTlVLI7Oga0/0YypqOvor0mgWQz9Pve5fT3s64qpQfuv2pc95ry9aZ/oFvQej8b9ykAqNypuihy09l7eEvQRVg7qtsgsFsN61QxLlohhYeBFJhgh7LK6r1l95n5Ek5Yp0t/Q3NmQ5UF33V3PAXJrq9yu64rkyYemi+nvZfb7XD7t+a15GVNFynHr1Duzpu2RRQCbT5jk+7LS116W2vbtF+BgXmFNwDeNdLnzMRlCkUY8ZGEDDR4vAHt1LLK4xz0UCqR5Z/fZZPyixtU4wU3lCFh/wj946T7CuRp6npxmXqt/5/2/M9Rx4NXZ96UV0Ml3xCKeb3vTmCnzOMBD5m+RFlao1PAgieY1J98tILtgWTk9//XR10WXc7Gb817CM8m3mqFt3nr2Dv30qmlGu0yjOxafeP4L6tlA=</source>
+    <source>eJytV9ty2zYQfddXoB1PKLmylKZ9siM5SppO1IknHteePlgeDUSuRNQUwQKgFafjf+/iwgtISqnT8kUSsWfPLvbsAnp9nsVZb3x83CPH5DoGcgXRinMVk9nlnCR8d5LAAyTk0yxX8Styo1jCFAM5QnsNeUPxPRfkrchTTi4hEpy8XmX6841wrkYh307ReNxL6RZkRsOK5qxXkJfEjiovqAomxN3TTQU1HsOESukgvb97BB/jTz86ujAEXM8EVxAqiMqFBypMujrLFZVAbq4+jtzq2HyWGHKkDW5EQiYkiJXK5Ol4XM8twCSeTZxRTDWjQhG+JspFcigImrFLjcEg8Ov4p4Os7IEqaHHOf6mThQmDVDX5DJIc2cV5hHRpniTP55IQClDP5Pvdgr6V0ynHWSl+D+keOmtyrS3+K5uAtQAZH6RzNv8TX8QEaqJLLCWdNbGa7WbTHm3zhDyVSuSh4qLw5xlVy8gdAnsASVi65mJLFeMpSQEiFKjiBYqlCgTFCHcM9aqq0LUKaBqhNpTE2RLSxIZQAKlSgq1yZcaLFwg2v6BbgoGwdFNT57Xv3L5HnY8OAp3MGuB3FmyFu89BXTgNfJfsmnBPCA18p5DaDqrStvB7hZGvEhaSdZ6GpmLLZVnUfrmXQ393hl6uQz/0oRfIwJDY4aufIxUzeTKtjZCS5KzbqOx7L4SWsd+19fhapo2O86LvMK73Sz01a/rU6p5ZFKGSy4FjzkD2xfZDDDSCViu9i2m6wc7R7WAtJKFC0EeyeiQ0inR1S48F6C1QAYLM/oV/pxPr8qhg0BJB5Ial2Gse7YjM1wS2mUJ2bOGdQ+5YkpAVdr0AHCVRJUOsRy5SZzVrpMDSMMlNCjq9Q9vRPNZKTeIWeGl+MLB+mcnEUvUHLbU5i9vAwwd3+qR0GxiQUYeGKh245ApX+6p+HQu+01WCzyFkJmy2xu3zOpcwPR4faMKiPTXiqz91m6LOJJmlxU8BGb5A8dtt49axzLBToSqD0iFIsiguQYv3RSiLuSU1qZVvv7btxt98bUDOQV8H1txlzNO8x47lEZDphPz88uWgZlAvhW0itHW/T6aKz2z1zjyA9vqdEWG/KuNutzvREsKtYCGKMLgbNIkKbOulzRI2Szybwrh7XT/BGITgYnK7CL6/O+8vdj+cD+z3xR/jPBjuBR4K8wDKhAOy02BAXrzoXChQtz+illHMTlVLI7Oga0/0YypqOvor0mgWQz9Pve5fT3s64qpQfuv2pc95ry9aZ/oFvQej8b9ykAqNypuihy09l7eEvQRVg7qtsgsFsN61QxLlohhYeBFJhgh7LK6r1l95n5Ek5Yp0t/Q3NmQ5UF33V3PAXJrq9yu64rkyYemi+nvZfb7XD7t+a15GVNFynHr1Duzpu2RRQCbT5jk+7LS116W2vbtF+BgXmFNwDeNdLnzMRlCkUY8ZGEDDR4vAHt1LLK4xz0UCqR5Z/fZZPyixtU4wU3lCFh/wj946T7CuRp6npxmXqt/5/2/M9Rx4NXZ96UV0Ml3xCKeb3vTmCnzOMBD5m+RFlao1PAgieY1J98tILtgWTk9//XR10WVc72aX6t7Z3j74zLTWkRZH31PvH6Q8rx4=</source>
   </file>
-  <file path="Redbooth/Service.php" generated-path="Redbooth.Service.html" hash="a2b131a6359015cb478001ddf2758aee" package="Default">
+  <file path="Redbooth/Service.php" generated-path="Redbooth.Service.html" hash="d47627e1bff729889b8662a6405bfd77" package="Default">
     <docblock line="0">
       <description>The Redbooth API Service Layer.</description>
       <long-description></long-description>
@@ -759,17 +759,17 @@ the $listGetters attribute.</long-description>
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Redbooth" line="94" package="Redbooth">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Redbooth" line="95" package="Redbooth">
         <name>getFile</name>
         <full_name>\Redbooth\Service::getFile()</full_name>
-        <docblock line="94">
+        <docblock line="95">
           <description>Get information about a file.</description>
           <long-description>Get information from a single file available
 to the user through the API.</long-description>
-          <tag name="param" line="94" description="&lt;p&gt;The ID of the file to get.&lt;/p&gt;" type="integer" variable="$id">
+          <tag name="param" line="95" description="&lt;p&gt;The ID of the file to get.&lt;/p&gt;" type="integer" variable="$id">
             <type>integer</type>
           </tag>
-          <tag name="return" line="94" description="An object representation of the file information." type="object">
+          <tag name="return" line="95" description="An object representation of the file information." type="object">
             <type>object</type>
           </tag>
         </docblock>
@@ -779,20 +779,20 @@ to the user through the API.</long-description>
           <type>integer</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Redbooth" line="109" package="Redbooth">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Redbooth" line="110" package="Redbooth">
         <name>downloadFile</name>
         <full_name>\Redbooth\Service::downloadFile()</full_name>
-        <docblock line="109">
+        <docblock line="110">
           <description>Download a single file.</description>
           <long-description>Download a file given its ID and obtain it
 as specified by the filename parameter.</long-description>
-          <tag name="param" line="109" description="&lt;p&gt;The ID of the file to download.&lt;/p&gt;" type="integer" variable="$id">
+          <tag name="param" line="110" description="&lt;p&gt;The ID of the file to download.&lt;/p&gt;" type="integer" variable="$id">
             <type>integer</type>
           </tag>
-          <tag name="param" line="109" description="&lt;p&gt;A filename to obtain the file.&lt;/p&gt;" type="string" variable="$filename">
+          <tag name="param" line="110" description="&lt;p&gt;A filename to obtain the file.&lt;/p&gt;" type="string" variable="$filename">
             <type>string</type>
           </tag>
-          <tag name="return" line="109" description="The contents of the downloaded file." type="string">
+          <tag name="return" line="110" description="The contents of the downloaded file." type="string">
             <type>string</type>
           </tag>
         </docblock>
@@ -807,38 +807,58 @@ as specified by the filename parameter.</long-description>
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Redbooth" line="122" package="Redbooth">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Redbooth" line="124" package="Redbooth">
+        <name>getUser</name>
+        <full_name>\Redbooth\Service::getUser()</full_name>
+        <docblock line="124">
+          <description>Get information about a particular user.</description>
+          <long-description>Get all the available information about the
+user identified by a given ID.</long-description>
+          <tag name="param" line="124" description="&lt;p&gt;The ID of the user to read.&lt;/p&gt;" type="integer" variable="$id">
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="124" description="An object representation of the user." type="object">
+            <type>object</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$id</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Redbooth" line="137" package="Redbooth">
         <name>getMe</name>
         <full_name>\Redbooth\Service::getMe()</full_name>
-        <docblock line="122">
+        <docblock line="137">
           <description>Get information about the authorized user.</description>
           <long-description>Get all the available information about the
 user currently authorized, i.e. me.</long-description>
-          <tag name="return" line="122" description="An object representation of the user." type="object">
+          <tag name="return" line="137" description="An object representation of the user." type="object">
             <type>object</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Redbooth" line="139" package="Redbooth">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Redbooth" line="154" package="Redbooth">
         <name>createConversation</name>
         <full_name>\Redbooth\Service::createConversation()</full_name>
-        <docblock line="139">
+        <docblock line="154">
           <description>Create a new conversation.</description>
           <long-description>Create a new conversation inside a specific project
 with all the information passed by the parameters.</long-description>
-          <tag name="param" line="139" description="&lt;p&gt;The ID of the project where you want to create the conversation.&lt;/p&gt;" type="integer" variable="$projectId">
+          <tag name="param" line="154" description="&lt;p&gt;The ID of the project where you want to create the conversation.&lt;/p&gt;" type="integer" variable="$projectId">
             <type>integer</type>
           </tag>
-          <tag name="param" line="139" description="&lt;p&gt;The name (title) of the conversation.&lt;/p&gt;" type="string" variable="$name">
+          <tag name="param" line="154" description="&lt;p&gt;The name (title) of the conversation.&lt;/p&gt;" type="string" variable="$name">
             <type>string</type>
           </tag>
-          <tag name="param" line="139" description="&lt;p&gt;You can optionally set the conversation body.&lt;/p&gt;" type="string" variable="$body">
+          <tag name="param" line="154" description="&lt;p&gt;You can optionally set the conversation body.&lt;/p&gt;" type="string" variable="$body">
             <type>string</type>
           </tag>
-          <tag name="param" line="139" description="&lt;p&gt;Whether or not the conversation is private. Defaults to false.&lt;/p&gt;" type="boolean" variable="$isPrivate">
+          <tag name="param" line="154" description="&lt;p&gt;Whether or not the conversation is private. Defaults to false.&lt;/p&gt;" type="boolean" variable="$isPrivate">
             <type>boolean</type>
           </tag>
-          <tag name="return" line="139" description="An object representation of the created conversation." type="object">
+          <tag name="return" line="154" description="An object representation of the created conversation." type="object">
             <type>object</type>
           </tag>
         </docblock>
@@ -863,30 +883,30 @@ with all the information passed by the parameters.</long-description>
           <type>boolean</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Redbooth" line="163" package="Redbooth">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Redbooth" line="178" package="Redbooth">
         <name>createTask</name>
         <full_name>\Redbooth\Service::createTask()</full_name>
-        <docblock line="163">
+        <docblock line="178">
           <description>Create a new task.</description>
           <long-description>Create a new task inside a specific project and a
 specific task list with all the information passed
 by the parameters.</long-description>
-          <tag name="param" line="163" description="&lt;p&gt;The ID of the project where you want to create the task.&lt;/p&gt;" type="integer" variable="$projectId">
+          <tag name="param" line="178" description="&lt;p&gt;The ID of the project where you want to create the task.&lt;/p&gt;" type="integer" variable="$projectId">
             <type>integer</type>
           </tag>
-          <tag name="param" line="163" description="&lt;p&gt;The ID of the task list where you want to create the task.&lt;/p&gt;" type="integer" variable="$tasklistId">
+          <tag name="param" line="178" description="&lt;p&gt;The ID of the task list where you want to create the task.&lt;/p&gt;" type="integer" variable="$tasklistId">
             <type>integer</type>
           </tag>
-          <tag name="param" line="163" description="&lt;p&gt;The description of the task.&lt;/p&gt;" type="string" variable="$description">
+          <tag name="param" line="178" description="&lt;p&gt;The description of the task.&lt;/p&gt;" type="string" variable="$description">
             <type>string</type>
           </tag>
-          <tag name="param" line="163" description="&lt;p&gt;Whether or not the task is private. Defaults to false.&lt;/p&gt;" type="boolean" variable="$isPrivate">
+          <tag name="param" line="178" description="&lt;p&gt;Whether or not the task is private. Defaults to false.&lt;/p&gt;" type="boolean" variable="$isPrivate">
             <type>boolean</type>
           </tag>
-          <tag name="param" line="163" description="&lt;p&gt;The status of the task. Can be new, open, hold, resolved or rejected. Defaults to open.&lt;/p&gt;" type="string" variable="$status">
+          <tag name="param" line="178" description="&lt;p&gt;The status of the task. Can be new, open, hold, resolved or rejected. Defaults to open.&lt;/p&gt;" type="string" variable="$status">
             <type>string</type>
           </tag>
-          <tag name="return" line="163" description="An object representing the created task." type="object">
+          <tag name="return" line="178" description="An object representing the created task." type="object">
             <type>object</type>
           </tag>
         </docblock>
@@ -921,26 +941,26 @@ by the parameters.</long-description>
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Redbooth" line="187" package="Redbooth">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Redbooth" line="202" package="Redbooth">
         <name>createSubTask</name>
         <full_name>\Redbooth\Service::createSubTask()</full_name>
-        <docblock line="187">
+        <docblock line="202">
           <description>Create a new subtask.</description>
           <long-description>Create a new subtask inside a specific task
 with all the information passed by the parameters.</long-description>
-          <tag name="param" line="187" description="&lt;p&gt;The ID of the task where you want to create the subtask.&lt;/p&gt;" type="integer" variable="$taskId">
+          <tag name="param" line="202" description="&lt;p&gt;The ID of the task where you want to create the subtask.&lt;/p&gt;" type="integer" variable="$taskId">
             <type>integer</type>
           </tag>
-          <tag name="param" line="187" description="&lt;p&gt;The name (title) of the subtask.&lt;/p&gt;" type="string" variable="$name">
+          <tag name="param" line="202" description="&lt;p&gt;The name (title) of the subtask.&lt;/p&gt;" type="string" variable="$name">
             <type>string</type>
           </tag>
-          <tag name="param" line="187" description="&lt;p&gt;Whether or not the subtask is resolved. Defaults to false.&lt;/p&gt;" type="boolean" variable="$resolved">
+          <tag name="param" line="202" description="&lt;p&gt;Whether or not the subtask is resolved. Defaults to false.&lt;/p&gt;" type="boolean" variable="$resolved">
             <type>boolean</type>
           </tag>
-          <tag name="param" line="187" description="&lt;p&gt;The ordinal position of the subtask on the list.&lt;/p&gt;" type="integer" variable="$position">
+          <tag name="param" line="202" description="&lt;p&gt;The ordinal position of the subtask on the list.&lt;/p&gt;" type="integer" variable="$position">
             <type>integer</type>
           </tag>
-          <tag name="return" line="187" description="An object representing the created subtask." type="object">
+          <tag name="return" line="202" description="An object representing the created subtask." type="object">
             <type>object</type>
           </tag>
         </docblock>
@@ -965,23 +985,23 @@ with all the information passed by the parameters.</long-description>
           <type>integer</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Redbooth" line="212" package="Redbooth">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Redbooth" line="227" package="Redbooth">
         <name>createTaskList</name>
         <full_name>\Redbooth\Service::createTaskList()</full_name>
-        <docblock line="212">
+        <docblock line="227">
           <description>Create a new task list.</description>
           <long-description>Create a new task list inside a specific project
 with all the information passed by the parameters.</long-description>
-          <tag name="param" line="212" description="&lt;p&gt;The ID of the project where you want to create the task list.&lt;/p&gt;" type="integer" variable="$projectId">
+          <tag name="param" line="227" description="&lt;p&gt;The ID of the project where you want to create the task list.&lt;/p&gt;" type="integer" variable="$projectId">
             <type>integer</type>
           </tag>
-          <tag name="param" line="212" description="&lt;p&gt;The name (title) of the task list.&lt;/p&gt;" type="string" variable="$name">
+          <tag name="param" line="227" description="&lt;p&gt;The name (title) of the task list.&lt;/p&gt;" type="string" variable="$name">
             <type>string</type>
           </tag>
-          <tag name="param" line="212" description="&lt;p&gt;Whether or not the task list is archived. Defaults to false.&lt;/p&gt;" type="boolean" variable="$archived">
+          <tag name="param" line="227" description="&lt;p&gt;Whether or not the task list is archived. Defaults to false.&lt;/p&gt;" type="boolean" variable="$archived">
             <type>boolean</type>
           </tag>
-          <tag name="return" line="212" description="An object representation of the created task list." type="object">
+          <tag name="return" line="227" description="An object representation of the created task list." type="object">
             <type>object</type>
           </tag>
         </docblock>
@@ -1001,29 +1021,29 @@ with all the information passed by the parameters.</long-description>
           <type>boolean</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Redbooth" line="234" package="Redbooth">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Redbooth" line="249" package="Redbooth">
         <name>createNote</name>
         <full_name>\Redbooth\Service::createNote()</full_name>
-        <docblock line="234">
+        <docblock line="249">
           <description>Create a new note.</description>
           <long-description>Create a new note inside a specific project
 with all the information passed by the parameters.</long-description>
-          <tag name="param" line="234" description="&lt;p&gt;The ID of the project where you want to create the note.&lt;/p&gt;" type="integer" variable="$projectId">
+          <tag name="param" line="249" description="&lt;p&gt;The ID of the project where you want to create the note.&lt;/p&gt;" type="integer" variable="$projectId">
             <type>integer</type>
           </tag>
-          <tag name="param" line="234" description="&lt;p&gt;The name (title) of the note.&lt;/p&gt;" type="string" variable="$name">
+          <tag name="param" line="249" description="&lt;p&gt;The name (title) of the note.&lt;/p&gt;" type="string" variable="$name">
             <type>string</type>
           </tag>
-          <tag name="param" line="234" description="&lt;p&gt;The content (body) of the note.&lt;/p&gt;" type="string" variable="$content">
+          <tag name="param" line="249" description="&lt;p&gt;The content (body) of the note.&lt;/p&gt;" type="string" variable="$content">
             <type>string</type>
           </tag>
-          <tag name="param" line="234" description="&lt;p&gt;Whether or not the note is private. Defaults to false.&lt;/p&gt;" type="boolean" variable="$isPrivate">
+          <tag name="param" line="249" description="&lt;p&gt;Whether or not the note is private. Defaults to false.&lt;/p&gt;" type="boolean" variable="$isPrivate">
             <type>boolean</type>
           </tag>
-          <tag name="param" line="234" description="&lt;p&gt;Whether or not the note is shared. Defaults to false.&lt;/p&gt;" type="boolean" variable="$shared">
+          <tag name="param" line="249" description="&lt;p&gt;Whether or not the note is shared. Defaults to false.&lt;/p&gt;" type="boolean" variable="$shared">
             <type>boolean</type>
           </tag>
-          <tag name="return" line="234" description="An object representation of the created note." type="object">
+          <tag name="return" line="249" description="An object representation of the created note." type="object">
             <type>object</type>
           </tag>
         </docblock>
@@ -1053,29 +1073,29 @@ with all the information passed by the parameters.</long-description>
           <type>boolean</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Redbooth" line="258" package="Redbooth">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Redbooth" line="273" package="Redbooth">
         <name>createComment</name>
         <full_name>\Redbooth\Service::createComment()</full_name>
-        <docblock line="258">
+        <docblock line="273">
           <description>Create a new comment.</description>
           <long-description>Create a new comment on a specific target
 with all the information passed by the parameters.</long-description>
-          <tag name="param" line="258" description="&lt;p&gt;The type of target where the comment will be created. Can be conversation or task.&lt;/p&gt;" type="string" variable="$targetType">
+          <tag name="param" line="273" description="&lt;p&gt;The type of target where the comment will be created. Can be conversation or task.&lt;/p&gt;" type="string" variable="$targetType">
             <type>string</type>
           </tag>
-          <tag name="param" line="258" description="&lt;p&gt;The ID of the target where the comment will be created.&lt;/p&gt;" type="integer" variable="$targetId">
+          <tag name="param" line="273" description="&lt;p&gt;The ID of the target where the comment will be created.&lt;/p&gt;" type="integer" variable="$targetId">
             <type>integer</type>
           </tag>
-          <tag name="param" line="258" description="&lt;p&gt;The body of the comment.&lt;/p&gt;" type="string" variable="$body">
+          <tag name="param" line="273" description="&lt;p&gt;The body of the comment.&lt;/p&gt;" type="string" variable="$body">
             <type>string</type>
           </tag>
-          <tag name="param" line="258" description="&lt;p&gt;Optionally set the spent time on a task.&lt;/p&gt;" type="integer" variable="$minutes">
+          <tag name="param" line="273" description="&lt;p&gt;Optionally set the spent time on a task.&lt;/p&gt;" type="integer" variable="$minutes">
             <type>integer</type>
           </tag>
-          <tag name="param" line="258" description="&lt;p&gt;Optionally add the date when time tracking was turned on.&lt;/p&gt;" type="\Redbooth\date" variable="$timeTrackingOn">
+          <tag name="param" line="273" description="&lt;p&gt;Optionally add the date when time tracking was turned on.&lt;/p&gt;" type="\Redbooth\date" variable="$timeTrackingOn">
             <type>\Redbooth\date</type>
           </tag>
-          <tag name="return" line="258" description="An object representation of the created comment." type="object">
+          <tag name="return" line="273" description="An object representation of the created comment." type="object">
             <type>object</type>
           </tag>
         </docblock>
@@ -1500,19 +1520,20 @@ is not valid.</long-description>
     </class>
     <parse_markers>
       <error line="64" code="PPC:ERR-50015">Argument $name is missing from the Docblock of __call</error>
-      <error line="94" code="PPC:ERR-50015">Argument $id is missing from the Docblock of getFile</error>
-      <error line="109" code="PPC:ERR-50015">Argument $id is missing from the Docblock of downloadFile</error>
-      <error line="139" code="PPC:ERR-50015">Argument $projectId is missing from the Docblock of createConversation</error>
-      <error line="163" code="PPC:ERR-50015">Argument $projectId is missing from the Docblock of createTask</error>
-      <error line="163" code="PPC:ERR-50016">The type hint of the argument is incorrect for the type definition of the @param tag with argument $description in createTask()</error>
-      <error line="163" code="PPC:ERR-50016">The type hint of the argument is incorrect for the type definition of the @param tag with argument $isPrivate in createTask()</error>
-      <error line="163" code="PPC:ERR-50015">Argument $status is missing from the Docblock of createTask</error>
-      <error line="187" code="PPC:ERR-50015">Argument $taskId is missing from the Docblock of createSubTask</error>
-      <error line="212" code="PPC:ERR-50015">Argument $projectId is missing from the Docblock of createTaskList</error>
-      <error line="234" code="PPC:ERR-50015">Argument $projectId is missing from the Docblock of createNote</error>
-      <error line="258" code="PPC:ERR-50015">Argument $targetType is missing from the Docblock of createComment</error>
+      <error line="95" code="PPC:ERR-50015">Argument $id is missing from the Docblock of getFile</error>
+      <error line="110" code="PPC:ERR-50015">Argument $id is missing from the Docblock of downloadFile</error>
+      <error line="124" code="PPC:ERR-50015">Argument $id is missing from the Docblock of getUser</error>
+      <error line="154" code="PPC:ERR-50015">Argument $projectId is missing from the Docblock of createConversation</error>
+      <error line="178" code="PPC:ERR-50015">Argument $projectId is missing from the Docblock of createTask</error>
+      <error line="178" code="PPC:ERR-50016">The type hint of the argument is incorrect for the type definition of the @param tag with argument $description in createTask()</error>
+      <error line="178" code="PPC:ERR-50016">The type hint of the argument is incorrect for the type definition of the @param tag with argument $isPrivate in createTask()</error>
+      <error line="178" code="PPC:ERR-50015">Argument $status is missing from the Docblock of createTask</error>
+      <error line="202" code="PPC:ERR-50015">Argument $taskId is missing from the Docblock of createSubTask</error>
+      <error line="227" code="PPC:ERR-50015">Argument $projectId is missing from the Docblock of createTaskList</error>
+      <error line="249" code="PPC:ERR-50015">Argument $projectId is missing from the Docblock of createNote</error>
+      <error line="273" code="PPC:ERR-50015">Argument $targetType is missing from the Docblock of createComment</error>
     </parse_markers>
-    <source>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</source>
+    <source>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</source>
   </file>
   <package name="Default" full_name="Default"/>
   <package name="Redbooth" full_name="Redbooth"/>

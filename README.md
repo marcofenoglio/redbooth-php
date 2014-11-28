@@ -74,6 +74,7 @@ Redbooth API method | Service method | Description
 [`GET /tasks`](https://redbooth.com/api/api-docs/#page:tasks,header:tasks-task-list-get) | `getTasks()` | Get a list of tasks
 [`POST /tasks`](https://redbooth.com/api/api-docs/#page:tasks,header:tasks-task-list-post) | [`createTask()`](https://github.com/teambox/redbooth-php/blob/master/doc/Redbooth-Service.md#redboothservicecreatetask) | Create a task
 [`GET /users`](https://redbooth.com/api/api-docs/#page:users,header:users-user-list) | `getUsers()` | Get a list of users
+[`GET /users/{id}](https://redbooth.com/api/api-docs/#page:users,header:users-user) | [`getUser()`](https://github.com/teambox/redbooth-php/blob/master/doc/Redbooth-Service.md#redboothservicegetuser) | Get a single user
 
 ## License
 
