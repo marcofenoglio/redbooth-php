@@ -1,0 +1,18 @@
+{
+   "created_at" : 1400584525,
+   "use_gravatar" : false,
+   "type" : "User",
+   "bouncing_email" : false,
+   "avatar_url" : "https://secure.gravatar.com/avatar/",
+   "micro_avatar_url" : "https://secure.gravatar.com/avatar/",
+   "username" : "frank",
+   "first_name" : "Frank",
+   "updated_at" : 1416746391,
+   "id" : 1,
+   "last_name" : "Kramer",
+   "confirmed_user" : true,
+   "email" : "frank@example.com",
+   "needs_profile" : true,
+   "profile_avatar_url" : "https://secure.gravatar.com/avatar/",
+   "deleted" : false
+}
