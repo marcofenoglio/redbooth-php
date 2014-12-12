@@ -50,30 +50,30 @@ The following Redbooth API methods are supported by this package, after instanti
 
 Redbooth API method | Service method | Description
 --------------------|----------------|------------
-[`GET /activities`](https://redbooth.com/api/api-docs/#page:activities,header:activities-activity-list) | `getActivities()` | Get a list of activities
-[`GET /comments`](https://redbooth.com/api/api-docs/#page:comments,header:comments-comment-list-get) | `getComments()` | Get a list of comments
+[`GET /activities`](https://redbooth.com/api/api-docs/#page:activities,header:activities-activity-list) | [`getActivities()`](https://github.com/teambox/redbooth-php/blob/master/doc/Redbooth-Service.md#redboothservice__call) | Get a list of activities
+[`GET /comments`](https://redbooth.com/api/api-docs/#page:comments,header:comments-comment-list-get) | [`getComments()`](https://github.com/teambox/redbooth-php/blob/master/doc/Redbooth-Service.md#redboothservice__call) | Get a list of comments
 [`POST /comments`](https://redbooth.com/api/api-docs/#page:comments,header:comments-comment-list-post) | [`createComment()`](https://github.com/teambox/redbooth-php/blob/master/doc/Redbooth-Service.md#redboothservicecreatecomment) | Create a comment
-[`GET /conversations`](https://redbooth.com/api/api-docs/#page:conversations,header:conversations-conversation-list-get) | `getConversations()` | Get a list of conversations
+[`GET /conversations`](https://redbooth.com/api/api-docs/#page:conversations,header:conversations-conversation-list-get) | [`getConversations()`](https://github.com/teambox/redbooth-php/blob/master/doc/Redbooth-Service.md#redboothservice__call) | Get a list of conversations
 [`POST /conversations`](https://redbooth.com/api/api-docs/#page:conversations,header:conversations-conversation-list-post) | [`createConversation()`](https://github.com/teambox/redbooth-php/blob/master/doc/Redbooth-Service.md#redboothservicecreateconversation) | Create a conversation
 [`GET /files`](https://redbooth.com/api/api-docs/#page:files,header:files-file-list) | `getFiles()` | Get a list of files
 [`GET /files/{id}`](https://redbooth.com/api/api-docs/#page:files,header:files-file-get) | [`getFile()`](https://github.com/teambox/redbooth-php/blob/master/doc/ApiIndex.md) | Get a single file
 `GET /files/{id}/download`| [`downloadFile()`](https://github.com/teambox/redbooth-php/blob/master/doc/Redbooth-Service.md#redboothservicedownloadfile) | Download a file
 [`GET /me`](https://redbooth.com/api/api-docs/#page:user-information,header:user-information-user-information-get) | [`getMe()`](https://github.com/teambox/redbooth-php/blob/master/doc/Redbooth-Service.md#redboothservicegetme) | Get information about the authorized user
-[`GET /memberships`](https://redbooth.com/api/api-docs/#page:memberships,header:memberships-membership-list-get) | `getMemberships()` | Get a list of memberships
+[`GET /memberships`](https://redbooth.com/api/api-docs/#page:memberships,header:memberships-membership-list-get) | [`getMemberships()`](https://github.com/teambox/redbooth-php/blob/master/doc/Redbooth-Service.md#redboothservice__call) | Get a list of memberships
 [`GET /notes`](https://redbooth.com/api/api-docs/#page:notes,header:notes-note-list-get) | `getNotes()` | Get a list of notes
 [`POST /notes`](https://redbooth.com/api/api-docs/#page:notes,header:notes-note-list-post) | [`createNote()`](https://github.com/teambox/redbooth-php/blob/master/doc/Redbooth-Service.md#redboothservicecreatenote) | Create a note
-[`GET /notifications`](https://redbooth.com/api/api-docs/#page:notifications,header:notifications-notification-list-get) | `getNotifications()` | Get a list of notifications
+[`GET /notifications`](https://redbooth.com/api/api-docs/#page:notifications,header:notifications-notification-list-get) | [`getNotifications()`](https://github.com/teambox/redbooth-php/blob/master/doc/Redbooth-Service.md#redboothservice__call) | Get a list of notifications
 [`POST /notifications`](https://redbooth.com/api/api-docs/#page:notifications,header:notifications-notification-list-post) | `createNotification()` | Create a notification
-[`GET /organizations`](https://redbooth.com/api/api-docs/#page:organizations,header:organizations-organization-list-get) | `getOrganizations()` | Get a list of organizations
+[`GET /organizations`](https://redbooth.com/api/api-docs/#page:organizations,header:organizations-organization-list-get) | [`getOrganizations()`](https://github.com/teambox/redbooth-php/blob/master/doc/Redbooth-Service.md#redboothservice__call) | Get a list of organizations
 [`GET /people`](https://redbooth.com/api/api-docs/#page:people,header:people-people-list-get) | `getPeople()` | Get a list of people
-[`GET /projects`](https://redbooth.com/api/api-docs/#page:projects,header:projects-project-list-get) | `getProjects()` | Get a list of projects
-[`GET /subtasks`](https://redbooth.com/api/api-docs/#page:subtasks,header:subtasks-subtasks-list-get) | `getSubtasks()` | Get a list of subtasks
+[`GET /projects`](https://redbooth.com/api/api-docs/#page:projects,header:projects-project-list-get) | [`getProjects()`](https://github.com/teambox/redbooth-php/blob/master/doc/Redbooth-Service.md#redboothservice__call) | Get a list of projects
+[`GET /subtasks`](https://redbooth.com/api/api-docs/#page:subtasks,header:subtasks-subtasks-list-get) | [`getSubtasks()`](https://github.com/teambox/redbooth-php/blob/master/doc/Redbooth-Service.md#redboothservice__call) | Get a list of subtasks
 [`POST /subtasks`](https://redbooth.com/api/api-docs/#page:subtasks,header:subtasks-subtasks-list-post) | [`createSubtask()`](https://github.com/teambox/redbooth-php/blob/master/doc/Redbooth-Service.md#redboothservicecreatesubtask) | Create a subtask
-[`GET /task_lists`](https://redbooth.com/api/api-docs/#page:tasklists,header:tasklists-tasklist-list-get) | `getTaskLists()` | Get a list of task lists
+[`GET /task_lists`](https://redbooth.com/api/api-docs/#page:tasklists,header:tasklists-tasklist-list-get) | [`getTaskLists()`](https://github.com/teambox/redbooth-php/blob/master/doc/Redbooth-Service.md#redboothservice__call) | Get a list of task lists
 [`POST /tasks_lists`](https://redbooth.com/api/api-docs/#page:tasklists,header:tasklists-tasklist-list-post) | [`createTaskList()`](https://github.com/teambox/redbooth-php/blob/master/doc/Redbooth-Service.md#redboothservicecreatetasklist) | Create a task list
-[`GET /tasks`](https://redbooth.com/api/api-docs/#page:tasks,header:tasks-task-list-get) | `getTasks()` | Get a list of tasks
+[`GET /tasks`](https://redbooth.com/api/api-docs/#page:tasks,header:tasks-task-list-get) | [`getTasks()`](https://github.com/teambox/redbooth-php/blob/master/doc/Redbooth-Service.md#redboothservice__call) | Get a list of tasks
 [`POST /tasks`](https://redbooth.com/api/api-docs/#page:tasks,header:tasks-task-list-post) | [`createTask()`](https://github.com/teambox/redbooth-php/blob/master/doc/Redbooth-Service.md#redboothservicecreatetask) | Create a task
-[`GET /users`](https://redbooth.com/api/api-docs/#page:users,header:users-user-list) | `getUsers()` | Get a list of users
+[`GET /users`](https://redbooth.com/api/api-docs/#page:users,header:users-user-list) | [`getUsers()`](https://github.com/teambox/redbooth-php/blob/master/doc/Redbooth-Service.md#redboothservice__call) | Get a list of users
 [`GET /users/{id}`](https://redbooth.com/api/api-docs/#page:users,header:users-user) | [`getUser()`](https://github.com/teambox/redbooth-php/blob/master/doc/Redbooth-Service.md#redboothservicegetuser) | Get a single user
 
 ## License
