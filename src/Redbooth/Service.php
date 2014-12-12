@@ -52,10 +52,26 @@ class Service extends Base
     );
 
     /**
-     * Automatically responde to some getters.
+     * Automatically respond to some getters.
      *
      * Magic method used to overload methods specified on
      * the $listGetters attribute.
+     *
+     * Available methods include:
+     * * `object getActivities()` Get a list of activities.
+     * * `object getComments()` Get a list of comments.
+     * * `object getConversations()` Get a list of conversations.
+     * * `object getMemberships()` Get a list of memberships.
+     * * `object getNotes()` Get a list of notes.
+     * * `object getNotifications()` Get a list of notifications.
+     * * `object getOrganizations()` Get a list of organizations.
+     * * `object getPeople()` Get a list of people.
+     * * `object getProjects()` Get a list of projects.
+     * * `object getSubtasks()` Get a list of subtasks.
+     * * `object getTaskLists()` Get a list of task lists.
+     * * `object getTasks()` Get a list of tasks.
+     * * `object getUsers()` Get a list of users.
+     * * `object getFiles()` Get a list of files.
      *
      * @param string $name The name of the method being called.
      * @param array $arguments A list of arguments passed to the method.
